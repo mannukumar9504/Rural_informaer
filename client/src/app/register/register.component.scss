@@ -1,0 +1,15 @@
+.bg {
+    background: url('../../assets/img/village.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    border: 1px solid #ffffff;
+    background: white;
+    padding: 50px 60px;
+    margin-top: 20%;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0, 0, 0, 0.75);
+}

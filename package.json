@@ -1,0 +1,28 @@
+{
+  "name": "angular_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "node": "^14.20.1",
+    "path": "^0.12.7",
+    "static": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannukumar9504/Angular_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mannukumar9504/Angular_project/issues"
+  },
+  "homepage": "https://github.com/mannukumar9504/Angular_project#readme"
+}

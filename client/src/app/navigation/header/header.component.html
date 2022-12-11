@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+    <!-- <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+         <mat-icon>menu</mat-icon>
+        </button>
+    </div> -->
+    <div class="project-title">
+        <a routerLink="/dashboard">Project Title</a>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs class="menu-section">
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items" *ngIf="loggedIn">
+            <li>
+                <a routerLink="/bussiness">Bussiness</a>
+            </li>
+            <li>
+                <a routerLink="/education">Education</a>
+            </li>
+            <li>
+                <a routerLink="/employment">Employment</a>
+            </li>
+            <li>
+                <a routerLink="/guide">Guide</a>
+            </li>
+            <li>
+                <a routerLink="/about">About</a>
+            </li>
+        </ul>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items login-side">
+            <li class="login-side" *ngIf="!loggedIn">
+                <a routerLink="/login">Login</a>
+            </li>
+            <li *ngIf="loggedIn">
+                <a>{{userName}}</a>
+            </li>
+        </ul>
+    </div>
+  </mat-toolbar>

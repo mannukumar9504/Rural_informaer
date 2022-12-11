@@ -1,0 +1,30 @@
+<div class="container-fluid bg">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 form-section">
+            <!--form start-->
+            <form class="form-container" [formGroup]="demoForm">
+                <div class="form-group">
+                    <h4>User login</h4>
+                    <label for="exampleInputEmail1" style="color:#761100;">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" [formControl]="userId" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" style="color:#761100;">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [formControl]="password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" style="color:#761100;"> Remember me
+                    </label>
+                </div>
+                <button type='button' class="btn btn-success btn-block" (click)="login()">Submit</button>
+                <a routerLink="/register" style="padding-left:50%;margin-top:10%;">create a new account</a>
+            </form>
+            <!--form end-->
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    </div>
+
+</div>
