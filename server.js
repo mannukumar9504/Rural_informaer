@@ -10,6 +10,8 @@ app.get("/",(req,res) => { //declare the route here
 })
 
 app.get("/mannu",(req,res) => { //declare the route here
+    console.log("api is called");
+    res.set('Access-Control-Allow-Origin', 'http://localhost:4200');
     return res.json({
         "statusCode": 200,
         "statusMessage": "connected to backend successfully"

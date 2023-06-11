@@ -15,6 +15,7 @@ import { loginService } from './login/login.service';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './navigation/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 import {
   FormsModule,
   ReactiveFormsModule
@@ -39,7 +40,8 @@ import {
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [loginService],
   bootstrap: [AppComponent]

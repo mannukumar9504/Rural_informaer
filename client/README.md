@@ -26,12 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## project setup
-1. install node on your machine version more than 14 atleast
-2. install npm package
-3. in root directory "RURAL_INFORMER" run command `npm install`
-4. run in client directory "RURAL_INFORMER\client" run commadn `npm install`
-5. run in `npm install -g @angular\cli` to install anualal environment
-6. in root run `npm start` command
-7. in client run `npm start` command
-8. you can check your project running on `http:\\localhost:4200`;
+
