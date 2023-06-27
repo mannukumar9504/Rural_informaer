@@ -15,11 +15,12 @@ import { loginService } from './login/login.service';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './navigation/header/header.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import {
   FormsModule,
   ReactiveFormsModule
 } from "@angular/forms";
+import { HttpInterceptorInterceptor } from './shared/interceptor/http-interceptor.interceptor';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,11 @@ import {
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [loginService],
+  providers: [loginService,{
+    provide: HTTP_INTERCEPTORS,
+    useClass: HttpInterceptorInterceptor,
+    multi: true
+   }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
